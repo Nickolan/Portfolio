@@ -1,0 +1,93 @@
+@mixin fontStyle {
+    font-size: 40px;
+}
+
+$colorbg-dark: #000;
+$colortxt: #2899f5;
+$colortext-dark: #fff;
+
+$colorbg-light: #fff;
+$colortext-light: #000;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'PT Sans', sans-serif;
+    background-color: $colorbg-dark;
+    color: $colortext-dark;
+}
+
+.nav{
+    border: 2px solid $colorbg-dark;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1b1c1d;
+    color: $colortxt;
+    .nav_menu{
+        display: flex;
+        flex-direction: row;
+        
+        li{
+            list-style: none;
+            margin: 10px;
+
+            a{
+                text-decoration: none;
+                font-weight: bold;
+                color: $colortext-dark;
+                transition: all 0.5s ease; 
+            }
+            a:hover{
+                padding: 5px 10px;
+                background-color: #fff;
+                color: $colortxt;
+                border-radius: 15px;
+            }
+        }
+    }
+}
+
+.connections{
+    display: flex;
+    flex-direction: row;
+}
+
+.connections div{
+    margin: 10px;
+}
+.connections div a{
+    text-decoration: none;
+    font-weight: bold;
+    color: $colortext-dark;
+    transition: all 0.5s ease;
+}
+.connections div a:hover{
+    padding: 5px 10px;
+    background-color: #fff;
+    color: $colortxt;
+    border-radius: 15px;
+}
+
+.toggle-theme_icon{
+    width: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 5px;
+}
+.toggle-theme_icon:hover{
+    cursor: pointer;
+}
+
+.home_title{
+    p{
+        color: $colortxt;
+    }
+    h1{
+        @include fontStyle()
+    }
+
+}
