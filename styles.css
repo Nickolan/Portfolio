@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -10,13 +11,33 @@ body {
   color: #fff;
 }
 
+header {
+  position: fixed;
+  width: 100%;
+}
+
+section {
+  scroll-margin-top: 80px;
+  display: flex;
+  align-items: center;
+  background-color: #1b1c1d;
+  justify-content: center;
+  height: 70vh;
+}
+
+.sect-1 {
+  background-color: #000;
+}
+
 .nav {
   border: 2px solid #000;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
+  height: 8vh;
   align-items: center;
-  background-color: #1b1c1d;
-  color: #2899f5;
+  background-color: #000;
+  color: #329aef;
 }
 .nav .nav_menu {
   display: flex;
@@ -35,30 +56,27 @@ body {
 .nav .nav_menu li a:hover {
   padding: 5px 10px;
   background-color: #fff;
-  color: #2899f5;
+  color: #329aef;
   border-radius: 15px;
 }
-
-.connections {
+.nav .connections {
   display: flex;
   flex-direction: row;
+  justify-content: none;
 }
-
-.connections div {
+.nav .connections div {
   margin: 10px;
 }
-
-.connections div a {
+.nav .connections div a {
   text-decoration: none;
   font-weight: bold;
   color: #fff;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
-
-.connections div a:hover {
+.nav .connections div a:hover {
   padding: 5px 10px;
   background-color: #fff;
-  color: #2899f5;
+  color: #329aef;
   border-radius: 15px;
 }
 
@@ -73,9 +91,50 @@ body {
   cursor: pointer;
 }
 
-.home_title p {
-  color: #2899f5;
+#home .home_title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
 }
-.home_title h1 {
-  font-size: 40px;
+#home .home_title div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  width: 550px;
+  height: 530px;
+}
+#home .home_title div button {
+  background-color: #329aef;
+  color: #efefef;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 100%;
+  text-align: center;
+  width: 110px;
+  height: 50px;
+  border: none;
+}
+#home .home_title div button:hover {
+  background-color: #2471b0;
+  color: #fff;
+  cursor: pointer;
+}
+#home .home_title h2 {
+  color: #329aef;
+  font-size: 30px;
+}
+#home .home_title h1 {
+  font-size: 50px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#home .home_title p {
+  font-size: 25px;
+}
+#home .home_title b {
+  font-size: 20px;
+}
+#home .home_title img {
+  display: flex;
 }/*# sourceMappingURL=styles.css.map */

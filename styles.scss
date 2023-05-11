@@ -1,36 +1,73 @@
-@mixin fontStyle {
-    font-size: 40px;
-}
-
 $colorbg-dark: #000;
-$colortxt: #2899f5;
+$colortxt: #329aef;
 $colortext-dark: #fff;
 
 $colorbg-light: #fff;
 $colortext-light: #000;
+$bgsection: #1b1c1d;
+@mixin fontStyleTitle {
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+@mixin flexibility($direction, $content){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $content;
+}
+@mixin button{
+    background-color: $colortxt;
+    color: #efefef;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100%;
+    text-align: center;
+    width: 110px;
+    height: 50px;
+    border: none;
+}
+@mixin button-hover{
+    background-color: #2471b0;
+    color: #fff;
+    cursor: pointer;
+}
+
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
     font-family: 'PT Sans', sans-serif;
     background-color: $colorbg-dark;
     color: $colortext-dark;
 }
+header{
+    position: fixed;
+    width: 100%;
+}
 
+section{
+    scroll-margin-top: 80px;
+    display: flex;
+    align-items: center;
+    background-color: $bgsection;
+    justify-content: center;
+    height: 70vh;
+}
+.sect-1{
+    background-color: #000;
+}
 .nav{
     border: 2px solid $colorbg-dark;
-    display: flex;
-    justify-content: space-around;
+    @include flexibility(row, space-around);
+    height: 8vh;
     align-items: center;
-    background-color: #1b1c1d;
+    background-color: #000;
     color: $colortxt;
     .nav_menu{
         display: flex;
         flex-direction: row;
-        
         li{
             list-style: none;
             margin: 10px;
@@ -49,29 +86,27 @@ body{
             }
         }
     }
+    
+    .connections{
+        @include flexibility(row, none);
+        div{
+            margin: 10px;
+            a{
+                text-decoration: none;
+                font-weight: bold;
+                color: $colortext-dark;
+                transition: all 0.3s ease;
+            }
+            a:hover{
+                padding: 5px 10px;
+                background-color: #fff;
+                color: $colortxt;
+                border-radius: 15px;
+            }
+        }
+    }
+    
 }
-
-.connections{
-    display: flex;
-    flex-direction: row;
-}
-
-.connections div{
-    margin: 10px;
-}
-.connections div a{
-    text-decoration: none;
-    font-weight: bold;
-    color: $colortext-dark;
-    transition: all 0.5s ease;
-}
-.connections div a:hover{
-    padding: 5px 10px;
-    background-color: #fff;
-    color: $colortxt;
-    border-radius: 15px;
-}
-
 .toggle-theme_icon{
     width: 40px;
     background-color: #fff;
@@ -81,13 +116,39 @@ body{
 .toggle-theme_icon:hover{
     cursor: pointer;
 }
-
-.home_title{
-    p{
-        color: $colortxt;
-    }
-    h1{
-        @include fontStyle()
-    }
-
+#home{
+    .home_title{
+        @include flexibility(row, space-between);
+        width: 70%;
+        div{
+            @include flexibility(column, space-evenly);
+            text-align: center;
+            align-items: center;
+            width: 550px;
+            height: 530px;
+            button{
+                @include button()
+            }
+            button:hover{
+                @include button-hover()
+            }
+        }
+        h2{
+            color: $colortxt;
+            font-size: 30px;
+        }
+        h1{
+            @include fontStyleTitle()
+        }
+        p{
+            font-size: 25px;
+        }
+        b{
+            font-size: 20px;
+        }
+        img{
+            display: flex;
+        }
+    
+}
 }
