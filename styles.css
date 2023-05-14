@@ -337,6 +337,17 @@ section .sect-title {
   justify-content: space-between;
   align-items: center;
 }
+#certificates .carousel .car-button {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  transition: 0.5s;
+}
+#certificates .carousel .car-button:hover {
+  width: 75px;
+  height: 75px;
+}
 #certificates .carousel img {
   height: 50vh;
   width: auto;
@@ -345,4 +356,151 @@ section .sect-title {
 #certificates .carousel img:hover {
   height: 55vh;
   width: auto;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#contact #contact-me {
+  transition: 0.5s;
+}
+#contact #contact-me a #copy {
+  background-color: #329aef;
+  color: #efefef;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 100%;
+  text-align: center;
+  width: 110px;
+  height: 50px;
+  border: none;
+}
+#contact #contact-me a #copy:hover {
+  background-color: #2471b0;
+  color: #fff;
+  cursor: pointer;
+}
+#contact #contact-me .input-mail-copy {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+#contact #contact-me .input-mail-copy button {
+  width: 50px;
+  border-radius: 50%;
+}
+#contact #contact-me:hover {
+  transform: scale(1.2);
+}
+#contact .contact-container {
+  width: 60vw;
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+}
+#contact .contact-container .contact-email {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+#contact .contact-container .contact-email input {
+  margin-left: 10px;
+}
+#contact .contact-container .contact-email #email {
+  width: 400px;
+  font-size: 21px;
+  background: none;
+  border: none;
+  color: white;
+}
+#contact .contact-container .contact-linkedin {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+#contact .contact-container .contact-linkedin:hover {
+  color: #329aef;
+}
+#contact .contact-container .contact-github {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+#contact .contact-container .contact-phone {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+#contact .contact-container a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+#contact .contact-container img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+#proyects .proyect-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#proyects .proyect-block .proyects-container {
+  padding-top: 5vh;
+  height: 60vh;
+  width: 70vw;
+}
+#proyects .proyect-block .proyects-container ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: start;
+}
+#proyects .proyect-block .proyects-container ul li {
+  list-style: none;
+  width: 400px;
+  height: auto;
+}
+#proyects .proyect-block .proyects-container ul li .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#proyects .proyect-block .proyects-container ul li .card .site-date {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10px;
+}
+#proyects .proyect-block .proyects-container ul li .card .site-date h4 {
+  font-size: 25px;
+}
+#proyects .proyect-block .proyects-container ul li .card .site-date p {
+  margin-top: 5px;
+}
+#proyects .proyect-block .proyects-container ul li .card img {
+  border: 3px solid #287fc7;
+  border-radius: 10%;
+  width: 20vw;
+  height: 25vh;
+  transition: 1s;
+}
+#proyects .proyect-block .proyects-container ul li .card img:hover {
+  transform: scale(1.08);
 }/*# sourceMappingURL=styles.css.map */

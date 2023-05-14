@@ -68,11 +68,36 @@
             </div>
         </section>
         <section id="proyects" class="sect-1">
-            <div class="sect-title">
-                <h2>Proyectos</h2>
-            </div>
-            <div class="proyects-container">
-
+            <div class="proyect-block">
+                <div class="sect-title">
+                    <h2>Proyectos</h2>
+                </div>
+                <div class="proyects-container">
+                    <ul>
+                        <li>
+                            <div class="card">
+                                <div>
+                                    <a target="_blank" href="https://find-your-perrito-client.vercel.app"><img src="./files/Proyects/FindYourPerrito-Title.JPG" alt=""></a>
+                                </div>
+                                <div class="site-date">
+                                    <h4>Find Your Perrito</h4>
+                                    <p>Aplicacion que permite a lo usuarios realizar la busqueda de razas caninas, revisar los detalles de cada raza y la posibilidad de agregar una raza personalisada.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card">
+                                <div>
+                                    <a target="_blank" href="https://books4-all-front.vercel.app"><img src="./files/Proyects/BOOKS4ALL.png" alt=""></a>
+                                </div>
+                                <div class="site-date">
+                                    <h4>Books4All</h4>
+                                    <p>Sitio Web creado como proyecto grupal de Henry para la compra de libros, reseña y su búsqueda mediante filtros y ordenamientos por género y autor, con capacidad de editar datos de usuario y gestionarlo a través de un dashboard administrativo.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
         <section id="tech" class="sect-2">
@@ -108,11 +133,11 @@
             <div>
                 <div class="carousel">
                     <div>
-                        <button id="prev-button">Anterior</button>
+                        <button class="car-button" id="prev-button"> < </button>
                     </div>
                     <img id="carousel-image" src="" alt="carousel image" />
                     <div class="buttons">
-                      <button id="next-button">Siguiente</button>
+                      <button class="car-button" id="next-button"> > </button>
                     </div>
                 </div>
                   
@@ -122,10 +147,35 @@
             <div class="sect-title">
                 <h2>Contacto</h2>
             </div>
+            <div class="contact-container">
+                <div id="contact-me" class="contact-email">
+                    <img src="./files/Icons-Tech/email_logo.png" alt="Email">
+                    <div class="input-mail-copy">
+                        <input id="email" type="text" value="nicolassantiagonavarrete.nsn@gmail.com" onClick="this.select()" readonly="readonly">
+                        <button id="copy"><img src="./files/Icons-Tech/copy2.png" alt=""></button>
+                    </div>
+                </div>
+                <div id="contact-me" class="contact-linkedin">
+                    <a target="_blank" href="https://www.linkedin.com/in/nikolas-navarrete/">
+                    <img src="./files/Icons-Tech/LinkedIn_icon.png" alt="linkedin">
+                        <h3>Linkedin</h3>
+                    </a>
+                </div>
+                <div id="contact-me" class="contact-github">
+                    <a target="_blank" href="https://github.com/Nickolan">
+                    <img src="./files/Icons-Tech/github_icon.png" alt="github">
+                        <h3>GitHub</h3>
+                    </a>
+                </div>
+                <div id="contact-me" class="contact-phone">
+                    <img src="./files/Icons-Tech/phone_icon.png" alt="phone">
+                    <h3>+54 9 261 609-0889</h3>
+                </div>
+            </div>
         </section>
 
         <script src="./tscripts.ts"></script>
+        <script src="./contactScript.js"></script>
         <script src="./carrusel.js"></script>
-        <footer></footer>
     </body>
 </html>
