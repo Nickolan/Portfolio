@@ -11,6 +11,23 @@ body {
   color: #fff;
 }
 
+button {
+  background-color: #329aef;
+  color: #efefef;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 100%;
+  text-align: center;
+  width: 110px;
+  height: 50px;
+  border: none;
+}
+
+button:hover {
+  background-color: #2471b0;
+  color: #fff;
+  cursor: pointer;
+}
+
 header {
   position: fixed;
   width: 100%;
@@ -24,9 +41,18 @@ section {
   justify-content: center;
   height: 70vh;
 }
+section .sect-title {
+  font-size: 45px;
+  color: #329aef;
+  cursor: default;
+}
 
 .sect-1 {
   background-color: #000;
+}
+
+.sect-2 {
+  background-color: #1b1c1d;
 }
 
 .nav {
@@ -38,6 +64,10 @@ section {
   align-items: center;
   background-color: #000;
   color: #329aef;
+}
+.nav .nav-name:hover {
+  color: rgb(29, 100, 158);
+  cursor: default;
 }
 .nav .nav_menu {
   display: flex;
@@ -80,17 +110,6 @@ section {
   border-radius: 15px;
 }
 
-.toggle-theme_icon {
-  width: 40px;
-  background-color: #fff;
-  border-radius: 50%;
-  margin: 5px;
-}
-
-.toggle-theme_icon:hover {
-  cursor: pointer;
-}
-
 #home .home_title {
   display: flex;
   flex-direction: row;
@@ -105,21 +124,6 @@ section {
   align-items: center;
   width: 550px;
   height: 530px;
-}
-#home .home_title div button {
-  background-color: #329aef;
-  color: #efefef;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 100%;
-  text-align: center;
-  width: 110px;
-  height: 50px;
-  border: none;
-}
-#home .home_title div button:hover {
-  background-color: #2471b0;
-  color: #fff;
-  cursor: pointer;
 }
 #home .home_title h2 {
   color: #329aef;
@@ -137,4 +141,208 @@ section {
 }
 #home .home_title img {
   display: flex;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#about .about_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#about .about_container .div_myImage {
+  width: 35vw;
+  height: 55vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+#about .about_container .div_myImage img {
+  width: 400px;
+  height: 450px;
+  border-radius: 50%;
+  border: solid 4px #287fc7;
+}
+#about .about_container .div_myInfo {
+  width: 50vw;
+  height: 50vh;
+}
+#about .about_container .div_myInfo .name_about h2 {
+  font-size: 40px;
+  font-family: "Times New Roman", Times, serif;
+}
+#about .about_container .div_myInfo .name_about span {
+  font-size: 15px;
+  color: #329aef;
+}
+#about .about_container .div_myInfo .text_about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 86%;
+}
+#about .about_container .div_myInfo .text_about p {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+#tech {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#tech .tech-container ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#tech .tech-container ul li {
+  margin: 20px;
+  list-style: none;
+}
+#tech .tech-container ul li .html-icon {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  transition: 0.5s;
+}
+#tech .tech-container ul li img.html-icon:hover {
+  border: solid 10px #FF5722;
+  border-radius: 50%;
+  width: 230px;
+  height: 230px;
+}
+#tech .tech-container ul li .css-icon {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  transition: 0.5s;
+}
+#tech .tech-container ul li img.css-icon:hover {
+  border: solid 10px #29A9DF;
+  border-radius: 50%;
+  width: 230px;
+  height: 230px;
+}
+#tech .tech-container ul li .js-icon {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  transition: 0.5s;
+}
+#tech .tech-container ul li img.js-icon:hover {
+  border: solid 10px #F1BF22;
+  border-radius: 50%;
+  width: 230px;
+  height: 230px;
+}
+#tech .tech-container ul li .react-icon {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  transition: 0.5s;
+}
+#tech .tech-container ul li img.react-icon:hover {
+  border: solid 10px #61DAFB;
+  border-radius: 50%;
+  width: 230px;
+  height: 230px;
+}
+#tech .tech-container ul li .redux-icon {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  transition: 0.5s;
+}
+#tech .tech-container ul li img.redux-icon:hover {
+  border: solid 10px #764abc;
+  border-radius: 50%;
+  width: 230px;
+  height: 230px;
+}
+#tech .tech-container ul li .node-icon {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  transition: 0.5s;
+}
+#tech .tech-container ul li img.node-icon:hover {
+  border: solid 10px #539e43;
+  border-radius: 50%;
+  width: 230px;
+  height: 230px;
+}
+#tech .tech-container ul li .sass-icon {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  transition: 0.5s;
+}
+#tech .tech-container ul li img.sass-icon:hover {
+  border: solid 10px #cc6699;
+  border-radius: 50%;
+  width: 230px;
+  height: 230px;
+}
+#tech .tech-container ul li .bootstrap-icon {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  transition: 0.5s;
+}
+#tech .tech-container ul li img.bootstrap-icon:hover {
+  border: solid 10px #8512fa;
+  border-radius: 50%;
+  width: 230px;
+  height: 230px;
+}
+#tech .tech-container ul li .postgreSQL-icon {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  transition: 0.5s;
+}
+#tech .tech-container ul li img.postgreSQL-icon:hover {
+  border: solid 10px #336791;
+  border-radius: 50%;
+  width: 230px;
+  height: 230px;
+}
+#tech .tech-container ul li .github-icon {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  transition: 0.5s;
+}
+#tech .tech-container ul li img.github-icon:hover {
+  border: solid 10px #fff;
+  border-radius: 50%;
+  width: 230px;
+  height: 230px;
+}
+
+#certificates {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#certificates .carousel {
+  width: 60vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#certificates .carousel img {
+  height: 50vh;
+  width: auto;
+  transition: 0.5s;
+}
+#certificates .carousel img:hover {
+  height: 55vh;
+  width: auto;
 }/*# sourceMappingURL=styles.css.map */
