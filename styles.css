@@ -350,12 +350,12 @@ section .sect-title {
 }
 #certificates .carousel img {
   height: 50vh;
-  width: auto;
+  width: 32vw;
+  border: solid 5px #329aef;
   transition: 0.5s;
 }
 #certificates .carousel img:hover {
-  height: 55vh;
-  width: auto;
+  transform: scale(1.1);
 }
 
 #contact {

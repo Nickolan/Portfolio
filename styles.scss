@@ -310,12 +310,12 @@ section{
         }
         img{
             height: 50vh;
-            width: auto;
+            width: 32vw;
+            border: solid 5px $colortxt;
             transition: .5s;
         }
         img:hover{
-            height: 55vh;
-            width: auto;
+            transform: scale(1.1);
         }
     }
 }
