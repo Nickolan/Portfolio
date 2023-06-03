@@ -7,7 +7,7 @@
 
 body {
   font-family: "PT Sans", sans-serif;
-  background-color: #000;
+  background-color: #0c1947;
   color: #fff;
 }
 
@@ -37,9 +37,9 @@ section {
   scroll-margin-top: 80px;
   display: flex;
   align-items: center;
-  background-color: #1b1c1d;
+  background-color: #081929;
   justify-content: center;
-  height: 70vh;
+  height: 80vh;
 }
 section .sect-title {
   font-size: 45px;
@@ -48,15 +48,15 @@ section .sect-title {
 }
 
 .sect-1 {
-  background-color: #000;
+  background-color: #0c1947;
 }
 
 .sect-2 {
-  background-color: #1b1c1d;
+  background-color: #081929;
 }
 
 .nav {
-  border: 2px solid #000;
+  border: 2px solid #0c1947;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -151,20 +151,17 @@ section .sect-title {
 #about .about_container {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: end;
 }
 #about .about_container .div_myImage {
-  width: 35vw;
-  height: 55vh;
   display: flex;
-  justify-content: center;
-  align-items: start;
+  justify-content: end;
+  align-items: end;
 }
 #about .about_container .div_myImage img {
-  width: 400px;
-  height: 450px;
-  border-radius: 50%;
-  border: solid 4px #287fc7;
+  width: auto;
+  height: 70vh;
 }
 #about .about_container .div_myInfo {
   width: 50vw;
@@ -319,6 +316,30 @@ section .sect-title {
 }
 #tech .tech-container ul li img.github-icon:hover {
   border: solid 10px #fff;
+  border-radius: 50%;
+  width: 230px;
+  height: 230px;
+}
+#tech .tech-container ul li .TypeScript-icon {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  transition: 0.5s;
+}
+#tech .tech-container ul li img.TypeScript-icon:hover {
+  border: solid 10px #3178c6;
+  border-radius: 50%;
+  width: 230px;
+  height: 230px;
+}
+#tech .tech-container ul li .mongodb-icon {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  transition: 0.5s;
+}
+#tech .tech-container ul li img.mongodb-icon:hover {
+  border: solid 10px #10aa50;
   border-radius: 50%;
   width: 230px;
   height: 230px;

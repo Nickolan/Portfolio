@@ -1,11 +1,11 @@
-$colorbg-dark: #000;
+$colorbg-dark: #0c1947;
 $colortxt: #329aef;
 $color-border: #287fc7;
 $colortext-dark: #fff;
 
 $colorbg-light: #fff;
 $colortext-light: #000;
-$bgsection: #1b1c1d;
+$bgsection: #081929;
 @mixin fontStyleTitle {
     font-size: 50px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -73,7 +73,7 @@ section{
     align-items: center;
     background-color: $bgsection;
     justify-content: center;
-    height: 70vh;
+    height: 80vh;
     .sect-title{
         font-size: 45px;
         color: $colortxt;
@@ -81,7 +81,7 @@ section{
     }
 }
 .sect-1{
-    background-color: #000;
+    background-color: $colorbg-dark;
 }
 .sect-2{
     background-color: $bgsection;
@@ -175,19 +175,15 @@ section{
 #about{
      @include flexibility(column, space-around);
     .about_container{
-        @include flexibility(row, space-evenly);
-
+        @include flexibility(row, space-between);
+        align-items: end;
         .div_myImage{
-            width: 35vw;
-            height: 55vh;
             display: flex;
-            justify-content: center;
-            align-items: start;
+            justify-content: end;
+            align-items: end;
             img{
-                width: 400px;
-                height: 450px;
-                border-radius: 50%;
-                border: solid 4px $color-border;
+                width: auto;
+                height: 70vh;
             }
         }
     
@@ -284,6 +280,18 @@ section{
                 }
                 img.github-icon:hover{
                     @include iconsHover(#fff)
+                }
+                .TypeScript-icon{
+                    @include techIcons()
+                }
+                img.TypeScript-icon:hover{
+                    @include iconsHover(#3178c6)
+                }
+                .mongodb-icon{
+                    @include techIcons()
+                }
+                img.mongodb-icon:hover{
+                    @include iconsHover(#10aa50)
                 }
             }
         }
