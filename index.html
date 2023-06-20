@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="styles.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="./files/icon.ico">
+        <script src="https://cdn.tailwindcss.com"></script>
         <title>Nicolas Portfolio</title>
+        <link rel="stylesheet" href="styltw.css">
     </head>
-    <body class="dark">
-        <header>
-            <nav class="nav">
+    <body class="h-screen">
+        <header class="fixed w-full">
+            <nav class="bg-zinc-950 flex flex-row justify-around items-center h-20">
                 <div>
-                    <h2 class="nav-name">Nicolas Navarrete</h2>
+                    <h2 class="font-serif font-bold text-3xl text-sky-400 hover:text-sky-600 hover:cursor-default">Nicolas Navarrete</h2>
                 </div>
-                <div >
-                    <ul class="nav_menu">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#proyects">Proyects</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                <div  >
+                    <ul class="text-zinc-100 text-xl flex flex-row justify-items-around font-semibold">
+                        <li class="mx-2 p-1 transition duration-700 rounded-full hover:bg-white hover:text-sky-400 hover:scale-125"><a href="#home">Home</a></li>
+                        <li class="mx-2 p-1 transition duration-700 rounded-full hover:bg-white hover:text-sky-400 hover:scale-125"><a href="#about">About</a></li>
+                        <li class="mx-2 p-1 transition duration-700 rounded-full hover:bg-white hover:text-sky-400 hover:scale-125"><a href="#proyects">Proyects</a></li>
+                        <li class="mx-2 p-1 transition duration-700 rounded-full hover:bg-white hover:text-sky-400 hover:scale-125"><a href="#tech">Skills</a></li>
+                        <li class="mx-2 p-1 transition duration-700 rounded-full hover:bg-white hover:text-sky-400 hover:scale-125"><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
-                <div class="connections">
-                    <div><a target="_blank" href="https://www.linkedin.com/in/nikolas-navarrete/">Linkedin</a></div>
-                    <div><a target="_blank" href="https://github.com/Nickolan">GitHub</a></div>
+                <div class="text-zinc-100 text-xl flex flex-row font-semibold">
+                    <div class="mx-2 p-1 transition duration-700 rounded-full hover:bg-white hover:text-sky-400 hover:scale-125"><a target="_blank" href="https://www.linkedin.com/in/nikolas-navarrete/">Linkedin</a></div>
+                    <div class="mx-2 p-1 transition duration-700 rounded-full hover:bg-white hover:text-sky-400 hover:scale-125"><a target="_blank" href="https://github.com/Nickolan">GitHub</a></div>
                 </div>
             </nav>
         </header>
-        <section id="home" class="sect-1">
-            <div class="home_title">
-                <div>    
-                    <h2>Hi, I'm Nicolas</h2>
-                    <h1>Full Stack Developer</h1>
-                    <b>Programming is not a job, it is the way to a whole virtual universe that we do not yet know.</b>
-                    <a href="https://drive.google.com/file/d/1cXCIOxFKW42xn7fI9DVHwUymG7sfhdJi/view?usp=sharing" download>
+        <section id="home" class="bg-blue-900 h-5/6 ">
+            <div class="home_title flex flex-row justify-evenly items-center h-full">
+                <div class="flex flex-col items-center justify-evenly h-5/6 text-center w-2/5">    
+                    <h2 class="font-serif font-bold text-6xl text-blue-400">Hi, I'm Nicolas</h2>
+                    <h1 class="font-serif text-5xl font-semibold text-zinc-100" >Full Stack Developer</h1>
+                    <b class="text-2xl font-bold text-zinc-100 w-4/5">Programming is not a job, it is the way to a whole virtual universe that we do not yet know.</b>
+                    <a class="bg-sky-400 hover:bg-sky-600 rounded-full w-24 h-10 text-white font-semibold flex justify-center content-center" href="https://drive.google.com/file/d/1cXCIOxFKW42xn7fI9DVHwUymG7sfhdJi/view?usp=sharing" download>
                         <button type="button" id="CV">CV</button>
                     </a>
                 </div>
@@ -42,74 +44,76 @@
                 </div>
             </div>
         </section>
-        <section id="about" class="sect-2">
-            <div class="sect-title"><h2>About Me</h2></div>
-            <div class="about_container">
-                <div class="div_myImage">
-                    <img src="./files/nikoblue.png" alt="NICOLAS NAVARRETE">
-                </div>
-                <div class="div_myInfo">
-                    <div class="name_about">
-                        <h2>
-                            Nicolas Navarrete
-                        </h2>
-                        <span>Full Stack Developer</span>
-                    </div>
-                    <div class="text_about">
-                        <p>
-                            I'm a Full Stack Developer from Mendoza, Argentina. Passionate about technology and web development, I love learning new ways to implement technology systems in my life.
-                        </p>
-                        <p>
-                            I have solid knowledge in JavaScript, React, HTML, CSS, Redux, NodeJS, Express, Git & GitHub technologies and experience in PostgreSQL database management.
-                        </p>
-                        <p>
-                            I'm an adaptable, persistent and automotive person, i integrate easily to teamwork thanks to my experiences in group projects.
-                        </p>
+        <section id="about" class="bg-blue-950 h-5/6 flex items-center justify-center">
+            <div class="flex flex-row items-center h-full w-3/4">
+                <!-- <div class="div_myImage h-full w-4/6">
+                    <img class="h-full " src="./files/nikoblue.png" alt="NICOLAS NAVARRETE">
+                </div> -->
+                <div class="about_container flex flex-col h-full items-center justify-around gap-y-10">
+                    <div class="sect-title flex flex-row h-1/6 font-serif font-bold text-7xl text-blue-400 items-center "><h2>About Me</h2></div>
+                    <div class="div_myInfo font-serif flex h-4/6 flex-col items-center w-5/6 justify-around ">
+                        <div class="name_about flex flex-col items-center">
+                            <h2 class="text-white text-5xl">
+                                Nicolas Navarrete
+                            </h2>
+                            <span class="text-blue-400 text-3xl">Full Stack Developer</span>
+                        </div>
+                        <div class="text_about text-white flex flex-col items-center gap-y-5 text-center">
+                            <p class="text-2xl">
+                                I'm a Full Stack Developer from Mendoza, Argentina. Passionate about technology and web development, I love learning new ways to implement technology systems in my life.
+                            </p>
+                            <p class="text-2xl">
+                                I have solid knowledge in JavaScript, React, HTML, CSS, Redux, NodeJS, Express, Git & GitHub technologies and experience in PostgreSQL database management.
+                            </p>
+                            <p class="text-2xl">
+                                I'm an adaptable, persistent and automotive person, i integrate easily to teamwork thanks to my experiences in group projects.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="proyects" class="sect-1">
-            <div class="proyect-block">
-                <div class="sect-title">
-                    <h2>Projects</h2>
+        <section id="proyects" class="bg-blue-900 h-5/6">
+            <div class="proyect-block flex flex-col h-full items-center justify-around">
+                <div class="sect-title h-1/6 flex items-center ">
+                    <h2 class=" text-blue-400 font-serif font-bold text-7xl">Projects</h2>
                 </div>
-                <div class="proyects-container">
-                    <ul>
-                        <li>
-                            <div class="card">
-                                <div>
-                                    <a target="_blank" href="https://find-your-perrito-client.vercel.app"><img src="./files/Proyects/FindYourPerrito-Title.JPG" alt="Find-Your-Perrito"></a>
+                <div class="proyects-container h-4/6 ">
+                    <ul class="h-full flex flex-row items-center justify-evenly">
+                        <li class="h-full w-1/4 ">
+                            <div class="card  flex flex-col h-full">
+                                <div class="h-80">
+                                    <a target="_blank" href="https://find-your-perrito-client.vercel.app"><img class="h-64 hover:scale-125 duration-500 w-full border-blue-600 border-4 rounded-3xl" src="./files/Proyects/FindYourPerrito-Title.JPG" alt="Find-Your-Perrito"></a>
                                 </div>
-                                <div class="site-date">
-                                    <h4>Find Your Perrito</h4>
-                                    <p>
+                                <div class="site-date flex flex-col items-center text-center font-bold text-zinc-100 bg-blue-950 gap-y-1">
+                                    <h4 class="text-sky-400 font-bold text-2xl">Find Your Perrito</h4>
+                                    <p class="font-serif">
                                         Application that allows users to search for dog breeds, review the detail of each breed and the possibility of adding personalized breeds
                                     </p>
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            <div class="card">
-                                <div>
-                                    <a target="_blank" href="https://study-with-pomo.vercel.app"><img src="./files/Proyects/studywithpomo.png" alt="Study-With-Pomo"></a>
+                        <li class="h-full  w-1/4">
+                            <div class="card  flex flex-col h-full">
+                                <div class="h-80 ">
+                                    <a target="_blank" href="https://study-with-pomo.vercel.app"><img class="h-64 w-full hover:scale-125 duration-500 border-blue-600 border-4 rounded-3xl" src="./files/Proyects/studywithpomo.png" alt="Study-With-Pomo"></a>
                                 </div>
-                                <div class="site-date">
-                                    <h4>Study With Pomo</h4>
-                                    <p>
+                                <div class="site-date bg-blue-950 flex flex-col items-center text-center font-bold text-zinc-100 gap-y-1">
+                                    <h4 class="text-sky-400 font-bold text-2xl">Study With Pomo</h4>
+                                    <p class="font-serif">
                                         Pomodoro clock made to increase efficiency and control working time with rest time, users can set the timer as they want, select how long they want to work and how long they want the sessions, the background color changes depending on the time of day, finally users can choose whether they want a default background or a special background with or without ambient sound.
                                     </p>
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            <div class="card">
-                                <div>
-                                    <a target="_blank" href="https://books4-all-front.vercel.app"><img src="./files/Proyects/BOOKS4ALL.png" alt="Books-4-All"></a>
+                        <li class="h-full w-1/4">
+                            <div class="card  flex flex-col h-full" >
+                                <div class="h-80">
+                                    <a target="_blank" href="https://books4-all-front.vercel.app"><img class="h-64 w-full hover:scale-125 duration-500 border-blue-600 border-4 rounded-3xl" src="./files/Proyects/BOOKS4ALL.png" alt="Books-4-All"></a>
                                 </div>
-                                <div class="site-date">
-                                    <h4>Books4All</h4>
-                                    <p>
+                                <div class="site-date bg-blue-950 flex flex-col items-center text-center font-bold text-zinc-100 gap-y-1">
+                                    <h4 class="text-sky-400 font-bold text-2xl">Books4All</h4>
+                                    <p class="font-serif">
                                         Website created as a grupal project of Henry for the purchase of books, review and search through filters and orders by gender and authors, the ability to edit user data and manage it through an administrative dashboard.
                                     </p>
                                 </div>
@@ -119,77 +123,90 @@
                 </div>
             </div>
         </section>
-        <section id="tech" class="sect-2">
-            <div class="sect-title">
-                <h2>My Skills</h2>
+        <section id="tech" class="bg-blue-950 h-5/6">
+            <div class="items-center justify-center flex sect-title h-1/6">
+                <h2 class=" text-blue-400 font-serif font-bold text-7xl  justify-center">My Skills</h2>
             </div>
-            <div class="tech-container">
-                <div>
-                    <ul>
-                        <li><img class="html-icon" src="./files/Icons-Tech/HTML.png" alt="HTML"></li>
-                        <li><img class="css-icon" src="./files/Icons-Tech/CSS.png" alt="CSS"></li>
-                        <li><img class="js-icon" src="./files/Icons-Tech/JS.png" alt="JAVASCRIPT"></li>
-                        <li><img class="react-icon" src="./files/Icons-Tech/REACT.png" alt="REACT"></li>
-                        <li><img class="redux-icon" src="./files/Icons-Tech/REDUX.png" alt="REDUX"></li>
-                        <li><img class="TypeScript-icon" src="./files/Icons-Tech/Typescript.png" alt="TYPESCRIPT"></li>
-                    </ul>
+            <div class="tech-container h-5/6 justify-between flex-col flex">
+                <div class="flex flex-col gap-y-5">
+                    <div class="ml-5"><h2 class="font-serif text-5xl font-semibold text-zinc-100">Front-End</h2></div>
+                    <div class="flex flex-row items-center">
+                        <div id="line" class="h-0.5 border-2 w-24"></div><div id="circle" class="border-2 w-24 rounded-full h-24 flex justify-center items-center"><img class="h-16" src="./files/Icons-Tech/HTML.png" alt=""></div><div id="line" class="h-0.5 border-2 w-24"></div><div id="circle" class="border-2 w-24 rounded-full h-24 flex justify-center items-center"><img class="h-16" src="./files/Icons-Tech/CSS.png" alt=""></div><div id="line" class="h-0.5 border-2 w-24"></div><div id="circle" class="border-2 w-24 rounded-full h-24 flex justify-center items-center"><img class="h-16" src="./files/Icons-Tech/JS.png" alt=""></div><div id="line" class="h-0.5 border-2 w-24"></div><div id="circle" class="border-2 w-24 rounded-full h-24 flex justify-center items-center"><img class="h-16" src="./files/Icons-Tech/Typescript.png" alt=""></div><div id="line" class="h-0.5 border-2 w-24"></div><div id="circle" class="border-2 w-24 rounded-full h-24 flex justify-center items-center"><img class="h-16" src="./files/Icons-Tech/REACT2.png" alt=""></div><div id="line" class="h-0.5 border-2 w-24"></div><div id="circle" class="border-2 w-24 rounded-full h-24 flex justify-center items-center"><img class="h-16" src="./files/Icons-Tech/REDUX.png" alt=""></div><div id="line" class="h-0.5 border-2 w-24"></div><div id="circle" class="border-2 w-24 rounded-full h-24 flex justify-center items-center"><img class="h-16" src="./files/Icons-Tech/BOOTSTRAP.png" alt=""></div><div id="line" class="h-0.5 border-2 w-24"></div><div id="circle" class="border-2 w-24 rounded-full h-24 flex justify-center items-center"><img class="h-16" src="./files/Icons-Tech/SASS.png" alt=""></div><div id="line" class="h-0.5 border-2 w-24"></div><div id="circle" class="border-2 w-24 rounded-full h-24 flex justify-center items-center"><img class="h-16" src="./files/Icons-Tech/Tailwind.png" alt=""></div>
+                    </div>
                 </div>
-                <div>
-                    <ul>
-                        <li><img class="node-icon" src="./files/Icons-Tech/NODEJS.png" alt=""></li>
-                        <li><img class="sass-icon" src="./files/Icons-Tech/SASS.png" alt=""></li>
-                        <li><img class="bootstrap-icon" src="./files/Icons-Tech/BOOTSTRAP.png" alt=""></li>
-                        <li><img class="postgreSQL-icon" src="./files/Icons-Tech/POSTGRESQL.png" alt=""></li>
-                        <li><img class="github-icon" src="./files/Icons-Tech/GITHUB.png" alt=""></li>
-                        <li><img class="mongodb-icon" src="./files/Icons-Tech/MongoDB.png" alt=""></li>
-                    </ul>
+                <div class="flex flex-col gap-y-5">
+                    <div class="ml-5"><h2 class="font-serif text-5xl font-semibold text-zinc-100">Back-End</h2></div>
+                    <div class="flex flex-row items-center">
+                        <div id="line" class="h-0.5 border-2 w-24"></div><div id="circle" class="border-2 w-24 rounded-full h-24 flex justify-center items-center"><img class="h-16" src="./files/Icons-Tech/NODEJS.png" alt=""></div><div id="line" class="h-0.5 border-2 w-24"></div><div id="circle" class="border-2 w-24 rounded-full h-24 flex justify-center items-center"><img class="h-16" src="./files/Icons-Tech/Express.png" alt=""></div><div id="line" class="h-0.5 border-2 w-24"></div><div id="circle" class="border-2 w-24 rounded-full h-24 flex justify-center items-center"><img class="h-16" src="./files/Icons-Tech/Firebase.png" alt=""></div><div id="line" class="h-0.5 border-2 w-24"></div><div id="circle" class="border-2 w-24 rounded-full h-24 flex justify-center items-center"><img class="h-16" src="./files/Icons-Tech/Sequelize.png" alt=""></div>
+                    </div>
                 </div>
+                <div class="flex flex-col mb-5">
+                    <div class="ml-5 mb-5"><h2 class="font-serif text-5xl font-semibold text-zinc-100">Data Base</h2></div>
+                    <div class="flex flex-row items-center">
+                        <div id="line" class="h-0.5 border-2 w-24"></div><div id="circle" class="border-2 w-24 rounded-full h-24 flex justify-center items-center"><img class="h-16" src="./files/Icons-Tech/POSTGRESQL.png" alt=""></div>
+                        <div id="line" class="h-0.5 border-2 w-24"></div><div id="circle" class="border-2 w-24 rounded-full h-24 flex justify-center items-center"><img class="h-16" src="./files/Icons-Tech/MongoDB.png" alt=""></div>
+                        <div id="line" class="h-0.5 border-2 w-24"></div><div id="circle" class="border-2 w-24 rounded-full h-24 flex justify-center items-center"><img class="h-16" src="./files/Icons-Tech/mySQL.png" alt=""></div>
+                    </div>
                 </div>
+                <!-- <div class="flex flex-col gap-y-5">
+                    <div><h2 class="font-serif text-5xl font-semibold text-zinc-100">Tools</h2></div>
+                    <div class="flex flex-row items-center">
+                        <div id="line" class="h-0.5 border-2 w-24"></div><div id="circle" class="border-2 w-24 rounded-full h-24"></div><div id="line" class="h-0.5 border-2 w-24"></div><div id="circle" class="border-2 w-24 rounded-full h-24"></div><div id="line" class="h-0.5 border-2 w-24"></div><div id="circle" class="border-2 w-24 rounded-full h-24"></div><div id="line" class="h-0.5 border-2 w-24"></div><div id="circle" class="border-2 w-24 rounded-full h-24"></div><div id="line" class="h-0.5 border-2 w-24"></div><div id="circle" class="border-2 w-24 rounded-full h-24"></div>
+                    </div>
+                </div> -->
+            </div>
         </section>
-        <section id="certificates" class="sect-1">
-            <div class="sect-title">
-                <h2>Certificates</h2>
+        <section id="certificates" class="bg-blue-900 h-5/6 flex flex-col justify-around">
+            <div class="sect-title items-center justify-center flex h-1/6">
+                <h2 class="text-blue-400 font-serif font-bold text-7xl justify-center">Certificates</h2>
             </div>
             <div>
-                <div class="carousel">
-                    <div>
-                        <button class="car-button" id="prev-button"> < </button>
+                <div class="carousel flex flex-row justify-around items-center">
+                    <div class="">
+                        <button class="car-button bg-sky-400 hover:bg-sky-600 rounded-full w-16 h-16 text-white font-semibold flex justify-center items-start text-center text-5xl" id="prev-button"> < </button>
                     </div>
-                        <a  target="_blank" id="0" href=""><img id="carousel-image" src="" alt="carousel image" /></a>
+                    <div class="border-8 border-blue-600  w-2/5">
+                        <a  target="_blank" id="0" href=""><img class="h-2/5" id="carousel-image" src="" alt="carousel image" /></a>
+                    </div>
                     <div class="buttons">
-                      <button class="car-button" id="next-button"> > </button>
+                      <button class="car-button bg-sky-400 hover:bg-sky-600 rounded-full w-16 h-16 text-white font-semibold flex justify-center items-start text-center text-5xl" id="next-button"> > </button>
                     </div>
                 </div>
                   
             </div>
         </section>
-        <section id="contact" class="sect-2">
-            <div class="sect-title">
-                <h2>Contact</h2>
+        <section id="contact" class="bg-blue-950 h-3/4 flex flex-col items-center">
+            <div class="sect-title h-1/6 items-center justify-center flex">
+                <h2 class="text-blue-400 font-serif font-bold text-7xl justify-center">Contact</h2>
             </div>
-            <div class="contact-container">
-                <div id="contact-me" class="contact-email">
-                    <img src="./files/Icons-Tech/email_logo.png" alt="Email">
-                    <div class="input-mail-copy">
-                        <input id="email" type="text" value="nicolassantiagonavarrete.nsn@gmail.com" onClick="this.select()" readonly="readonly">
-                        <button id="copy"><img src="./files/Icons-Tech/copy2.png" alt=""></button>
+            <div class="contact-container h-5/6 w-3/4 items-center flex flex-col">
+                <div id="contact-me" class="contact-email h-1/4 w-4/6 flex flex-row items-center justify-evenly">
+                    <img class="h-4/6" src="./files/Icons-Tech/email_logo.png" alt="Email">
+                    <div class="input-mail-copy h-5/6 flex flex-row items-center w-3/6 justify-center">
+                        <h3 class="text-2xl text-white font-serif font-bold">nicolassantiagonavarrete.nsn@gmail.com</h3>
                     </div>
                 </div>
-                <div id="contact-me" class="contact-linkedin">
-                    <a target="_blank" href="https://www.linkedin.com/in/nikolas-navarrete/">
-                    <img src="./files/Icons-Tech/LinkedIn_icon.png" alt="linkedin">
-                        <h3>Linkedin</h3>
-                    </a>
+                <div id="contact-me" class="contact-linkedin h-1/4 w-4/6 flex flex-row items-center justify-evenly">
+                    <img class="h-4/6" src="./files/Icons-Tech/LinkedIn_icon.png" alt="linkedin">
+                    <div class="h-full w-3/6 flex flex-row justify-center items-center">
+                        <a class=" " target="_blank" href="https://www.linkedin.com/in/nikolas-navarrete/">
+                            <h3 class="text-4xl text-white font-serif font-bold">Linkedin</h3>
+                        </a>
+                    </div>
                 </div>
-                <div id="contact-me" class="contact-github">
-                    <a target="_blank" href="https://github.com/Nickolan">
-                    <img src="./files/Icons-Tech/github_icon.png" alt="github">
-                        <h3>GitHub</h3>
-                    </a>
+                <div id="contact-me" class="contact-github h-1/4 w-4/6 flex flex-row items-center justify-evenly">
+                    <img class="h-4/6" src="./files/Icons-Tech/github_icon.png" alt="github">
+                    <div class="h-full w-3/6 flex flex-row justify-center items-center">
+                        <a target="_blank" href="https://github.com/Nickolan">
+                            <h3 class="text-4xl text-white font-serif font-bold">GitHub</h3>
+                        </a>
+                    </div>
                 </div>
-                <div id="contact-me" class="contact-phone">
-                    <img src="./files/Icons-Tech/phone_icon.png" alt="phone">
-                    <h3>+54 9 261 609-0889</h3>
+                <div id="contact-me" class="contact-phone h-1/4 w-4/6 flex flex-row items-center justify-evenly">
+                    <img class="h-4/6" src="./files/Icons-Tech/phone_icon.png" alt="phone">
+                    <div class="h-full w-3/6 flex flex-row justify-center items-center">
+                        <h3 class="text-4xl text-white font-serif font-bold">+54 9 261 609-0889</h3>
+                    </div>
                 </div>
             </div>
         </section>

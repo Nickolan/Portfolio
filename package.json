@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "index.html"
+    "start": "index.html",
+    "build-css": "tailwindcss build src/style2.css -o styletw.css"
   },
   "keywords": [],
   "author": "Nicolas Navarrete",
@@ -15,5 +16,8 @@
     "node": "^20.1.0",
     "nodemon": "^2.0.22",
     "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
   }
 }
