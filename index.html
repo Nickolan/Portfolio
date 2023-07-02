@@ -6,57 +6,50 @@
         <link rel="icon" href="./files/icon.ico">
         <script src="https://cdn.tailwindcss.com"></script>
         <title>Nicolas Portfolio</title>
-        <link rel="stylesheet" href="styltw.css">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body class="h-screen">
-        <header class="fixed w-full">
-            <nav class="bg-zinc-950 flex flex-row justify-around items-center h-20">
-                <div>
-                    <h2 class="font-serif font-bold text-3xl text-sky-400 hover:text-sky-600 hover:cursor-default">Nicolas Navarrete</h2>
-                </div>
-                <div  >
-                    <ul class="text-zinc-100 text-xl flex flex-row justify-items-around font-semibold">
-                        <li class="mx-2 p-1 transition duration-700 rounded-full hover:bg-white hover:text-sky-400 hover:scale-125"><a href="#home">Home</a></li>
-                        <li class="mx-2 p-1 transition duration-700 rounded-full hover:bg-white hover:text-sky-400 hover:scale-125"><a href="#about">About</a></li>
-                        <li class="mx-2 p-1 transition duration-700 rounded-full hover:bg-white hover:text-sky-400 hover:scale-125"><a href="#proyects">Proyects</a></li>
-                        <li class="mx-2 p-1 transition duration-700 rounded-full hover:bg-white hover:text-sky-400 hover:scale-125"><a href="#tech">Skills</a></li>
-                        <li class="mx-2 p-1 transition duration-700 rounded-full hover:bg-white hover:text-sky-400 hover:scale-125"><a href="#contact">Contact</a></li>
+        <header class="fixed w-full flex flex-row items-center h-20 bg-zinc-950">
+            <div>
+                <h2 class="font-serif font-bold text-sky-400 hover:text-sky-600 hover:cursor-default">Nicolas Navarrete</h2>
+            </div>
+            <button id="abrir" class="abrir-menu rounded-full">Menu</button>
+            <nav class="nav" id="nav">
+                    <button id="cerrar" class="text-zinc-100 font-semibold cerrar-menu w-auto h-14 items-center"><h2>Close</h2></button>
+                    <ul class="nav-list text-zinc-100 font-semibold">
+                        <li class="transition duration-700 hover:bg-white hover:text-sky-400 hover:scale-125"><a href="#home">Home</a></li>
+                        <li class="transition duration-700 hover:bg-white hover:text-sky-400 hover:scale-125"><a href="#about">About</a></li>
+                        <li class="transition duration-700 hover:bg-white hover:text-sky-400 hover:scale-125"><a href="#proyects">Proyects</a></li>
+                        <li class="transition duration-700 hover:bg-white hover:text-sky-400 hover:scale-125"><a href="#tech">Skills</a></li>
+                        <li class="transition duration-700 hover:bg-white hover:text-sky-400 hover:scale-125"><a href="#contact">Contact</a></li>
                     </ul>
-                </div>
-                <div class="text-zinc-100 text-xl flex flex-row font-semibold">
-                    <div class="mx-2 p-1 transition duration-700 rounded-full hover:bg-white hover:text-sky-400 hover:scale-125"><a target="_blank" href="https://www.linkedin.com/in/nikolas-navarrete/">Linkedin</a></div>
-                    <div class="mx-2 p-1 transition duration-700 rounded-full hover:bg-white hover:text-sky-400 hover:scale-125"><a target="_blank" href="https://github.com/Nickolan">GitHub</a></div>
-                </div>
             </nav>
         </header>
         <section id="home" class="bg-blue-900 h-5/6 ">
-            <div class="home_title flex flex-row justify-evenly items-center h-full">
-                <div class="flex flex-col items-center justify-evenly h-5/6 text-center w-2/5">    
-                    <h2 class="font-serif font-bold text-6xl text-blue-400">Hi, I'm Nicolas</h2>
-                    <h1 class="font-serif text-5xl font-semibold text-zinc-100" >Full Stack Developer</h1>
-                    <b class="text-2xl font-bold text-zinc-100 w-4/5">Programming is not a job, it is the way to a whole virtual universe that we do not yet know.</b>
+            <div class="home_title flex items-center h-full w-full">
+                <div class="home_text flex flex-col items-center justify-evenly h-5/6 text-center">    
+                    <h2 class="font-serif font-bold text-blue-400">Hi, I'm Nicolas</h2>
+                    <h1 class="font-serif font-semibold text-zinc-100" >Full Stack Developer</h1>
+                    <b class="font-bold text-zinc-100">Programming is not a job, it is the way to a whole virtual universe that we do not yet know.</b>
                     <a class="bg-sky-400 hover:bg-sky-600 rounded-full w-24 h-10 text-white font-semibold flex justify-center content-center" href="https://drive.google.com/file/d/1cXCIOxFKW42xn7fI9DVHwUymG7sfhdJi/view?usp=sharing" download>
                         <button type="button" id="CV">CV</button>
                     </a>
                 </div>
-                <div>
+                <div class="image">
                     <img src="https://d2xrkn56aw2rdo.cloudfront.net/icc/assets/Mobile/Loading_Blue.gif" alt="">
                 </div>
             </div>
         </section>
-        <section id="about" class="bg-blue-950 h-5/6 flex items-center justify-center">
-            <div class="flex flex-row items-center h-full w-3/4">
-                <!-- <div class="div_myImage h-full w-4/6">
-                    <img class="h-full " src="./files/nikoblue.png" alt="NICOLAS NAVARRETE">
-                </div> -->
-                <div class="about_container flex flex-col h-full items-center justify-around gap-y-10">
-                    <div class="sect-title flex flex-row h-1/6 font-serif font-bold text-7xl text-blue-400 items-center "><h2>About Me</h2></div>
-                    <div class="div_myInfo font-serif flex h-4/6 flex-col items-center w-5/6 justify-around ">
+        <section id="about" class="bg-blue-950 h-5/6 w-full flex items-center justify-center">
+            <div class="flex flex-col items-start h-full w-3/4">
+                <div class="about_container flex flex-col h-full items-center justify-around gap-y-5">
+                    <div class="sect-title flex flex-row h-1/6 font-serif font-bold text-blue-400 items-center "><h2>About Me</h2></div>
+                    <div class="div_myInfo font-serif flex h-4/6 flex-col items-center">
                         <div class="name_about flex flex-col items-center">
-                            <h2 class="text-white text-5xl">
+                            <h2 class="text-white">
                                 Nicolas Navarrete
                             </h2>
-                            <span class="text-blue-400 text-3xl">Full Stack Developer</span>
+                            <span class="text-blue-400">Full Stack Developer</span>
                         </div>
                         <div class="text_about text-white flex flex-col items-center gap-y-5 text-center">
                             <p class="text-2xl">
@@ -66,7 +59,7 @@
                                 I have solid knowledge in JavaScript, React, HTML, CSS, Redux, NodeJS, Express, Git & GitHub technologies and experience in PostgreSQL database management.
                             </p>
                             <p class="text-2xl">
-                                I'm an adaptable, persistent and automotive person, i integrate easily to teamwork thanks to my experiences in group projects.
+                                I'm an adaptable, persistent and automotive person, I integrate easily to teamwork thanks to my experiences in group projects.
                             </p>
                         </div>
                     </div>
@@ -76,16 +69,16 @@
         <section id="proyects" class="bg-blue-900 h-5/6">
             <div class="proyect-block flex flex-col h-full items-center justify-around">
                 <div class="sect-title h-1/6 flex items-center ">
-                    <h2 class=" text-blue-400 font-serif font-bold text-7xl">Projects</h2>
+                    <h2 class=" text-blue-400 font-serif font-bold">Projects</h2>
                 </div>
                 <div class="proyects-container h-4/6 ">
-                    <ul class="h-full flex flex-row items-center justify-evenly">
-                        <li class="h-full w-1/4 ">
-                            <div class="card  flex flex-col h-full">
-                                <div class="h-80">
-                                    <a target="_blank" href="https://find-your-perrito-client.vercel.app"><img class="h-64 hover:scale-125 duration-500 w-full border-blue-600 border-4 rounded-3xl" src="./files/Proyects/FindYourPerrito-Title.JPG" alt="Find-Your-Perrito"></a>
+                    <ul class="h-full flex items-center justify-evenly">
+                        <li class="">
+                            <div class="card flex flex-col justify-start">
+                                <div class="image-proyect">
+                                    <a target="_blank" href="https://find-your-perrito-client.vercel.app"><img class="hover:scale-125 duration-500 w-full border-blue-600 border-4 rounded-3xl" src="./files/Proyects/FindYourPerrito-Title.JPG" alt="Find-Your-Perrito"></a>
                                 </div>
-                                <div class="site-date flex flex-col items-center text-center font-bold text-zinc-100 bg-blue-950 gap-y-1">
+                                <div class="site-date flex flex-col items-center text-center font-bold text-zinc-100 bg-blue-950">
                                     <h4 class="text-sky-400 font-bold text-2xl">Find Your Perrito</h4>
                                     <p class="font-serif">
                                         Application that allows users to search for dog breeds, review the detail of each breed and the possibility of adding personalized breeds
@@ -93,12 +86,12 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="h-full  w-1/4">
-                            <div class="card  flex flex-col h-full">
-                                <div class="h-80 ">
-                                    <a target="_blank" href="https://study-with-pomo.vercel.app"><img class="h-64 w-full hover:scale-125 duration-500 border-blue-600 border-4 rounded-3xl" src="./files/Proyects/studywithpomo.png" alt="Study-With-Pomo"></a>
+                        <li class="">
+                            <div class="card flex flex-col h-full">
+                                <div class="image-proyect">
+                                    <a target="_blank" href="https://study-with-pomo.vercel.app"><img class="hover:scale-125 duration-500 border-blue-600 border-4 rounded-3xl" src="./files/Proyects/studywithpomo.png" alt="Study-With-Pomo"></a>
                                 </div>
-                                <div class="site-date bg-blue-950 flex flex-col items-center text-center font-bold text-zinc-100 gap-y-1">
+                                <div class="site-date bg-blue-950 flex flex-col items-center text-center font-bold text-zinc-100">
                                     <h4 class="text-sky-400 font-bold text-2xl">Study With Pomo</h4>
                                     <p class="font-serif">
                                         Pomodoro clock made to increase efficiency and control working time with rest time, users can set the timer as they want, select how long they want to work and how long they want the sessions, the background color changes depending on the time of day, finally users can choose whether they want a default background or a special background with or without ambient sound.
@@ -106,12 +99,12 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="h-full w-1/4">
-                            <div class="card  flex flex-col h-full" >
-                                <div class="h-80">
-                                    <a target="_blank" href="https://books4-all-front.vercel.app"><img class="h-64 w-full hover:scale-125 duration-500 border-blue-600 border-4 rounded-3xl" src="./files/Proyects/BOOKS4ALL.png" alt="Books-4-All"></a>
+                        <li class="">
+                            <div class="card flex flex-col h-full" >
+                                <div class="image-proyect">
+                                    <a target="_blank" href="https://books4-all-front.vercel.app"><img class="hover:scale-125 duration-500 border-blue-600 border-4 rounded-3xl" src="./files/Proyects/BOOKS4ALL.png" alt="Books-4-All"></a>
                                 </div>
-                                <div class="site-date bg-blue-950 flex flex-col items-center text-center font-bold text-zinc-100 gap-y-1">
+                                <div class="site-date bg-blue-950 flex flex-col items-center text-center font-bold text-zinc-100">
                                     <h4 class="text-sky-400 font-bold text-2xl">Books4All</h4>
                                     <p class="font-serif">
                                         Website created as a grupal project of Henry for the purchase of books, review and search through filters and orders by gender and authors, the ability to edit user data and manage it through an administrative dashboard.
@@ -137,7 +130,9 @@
                 <div class="flex flex-col gap-y-5">
                     <div class="ml-5"><h2 class="font-serif text-5xl font-semibold text-zinc-100">Back-End</h2></div>
                     <div class="flex flex-row items-center">
-                        <div id="line" class="h-0.5 border-2 w-24"></div><div id="circle" class="border-2 w-24 rounded-full h-24 flex justify-center items-center"><img class="h-16" src="./files/Icons-Tech/NODEJS.png" alt=""></div><div id="line" class="h-0.5 border-2 w-24"></div><div id="circle" class="border-2 w-24 rounded-full h-24 flex justify-center items-center"><img class="h-16" src="./files/Icons-Tech/Express.png" alt=""></div><div id="line" class="h-0.5 border-2 w-24"></div><div id="circle" class="border-2 w-24 rounded-full h-24 flex justify-center items-center"><img class="h-16" src="./files/Icons-Tech/Firebase.png" alt=""></div><div id="line" class="h-0.5 border-2 w-24"></div><div id="circle" class="border-2 w-24 rounded-full h-24 flex justify-center items-center"><img class="h-16" src="./files/Icons-Tech/Sequelize.png" alt=""></div>
+                        <div id="line" class="h-0.5 border-2 w-24"></div><div id="circle" class="border-2 w-24 rounded-full h-24 flex justify-center items-center"><img class="h-16" src="./files/Icons-Tech/NODEJS.png" alt=""></div><div id="line" class="h-0.5 border-2 w-24"></div><div id="circle" class="border-2 w-24 rounded-full h-24 flex justify-center items-center"><img class="h-16" src="./files/Icons-Tech/Express.png" alt=""></div><div id="line" class="h-0.5 border-2 w-24"></div><div id="circle" class="border-2 w-24 rounded-full h-24 flex justify-center items-center"><img class="h-16" src="./files/Icons-Tech/Firebase.png" alt=""></div><div id="line" class="h-0.5 border-2 w-24"></div><div id="circle" class="border-2 w-24 rounded-full h-24 flex justify-center items-center"><img class="h-16" src="./files/Icons-Tech/Sequelize.png" alt=""></div><div id="line" class="h-0.5 border-2 w-24"></div><div id="circle" class="border-2 w-24 rounded-full h-24 flex justify-center items-center"><img class="h-16" src="./files/Icons-Tech/NestJS.png" alt=""></div>
+                        <div id="line" class="h-0.5 border-2 w-24"></div><div id="circle" class="border-2 w-24 rounded-full h-24 flex justify-center items-center"><img class="h-16" src="./files/Icons-Tech/Python.png" alt="Python"></div>
+                        <div id="line" class="h-0.5 border-2 w-24"></div><div id="circle" class="border-2 w-24 rounded-full h-24 flex justify-center items-center"><img class="h-16" src="./files/Icons-Tech/Flask.png" alt="Flask"></div>
                     </div>
                 </div>
                 <div class="flex flex-col mb-5">
@@ -148,12 +143,6 @@
                         <div id="line" class="h-0.5 border-2 w-24"></div><div id="circle" class="border-2 w-24 rounded-full h-24 flex justify-center items-center"><img class="h-16" src="./files/Icons-Tech/mySQL.png" alt=""></div>
                     </div>
                 </div>
-                <!-- <div class="flex flex-col gap-y-5">
-                    <div><h2 class="font-serif text-5xl font-semibold text-zinc-100">Tools</h2></div>
-                    <div class="flex flex-row items-center">
-                        <div id="line" class="h-0.5 border-2 w-24"></div><div id="circle" class="border-2 w-24 rounded-full h-24"></div><div id="line" class="h-0.5 border-2 w-24"></div><div id="circle" class="border-2 w-24 rounded-full h-24"></div><div id="line" class="h-0.5 border-2 w-24"></div><div id="circle" class="border-2 w-24 rounded-full h-24"></div><div id="line" class="h-0.5 border-2 w-24"></div><div id="circle" class="border-2 w-24 rounded-full h-24"></div><div id="line" class="h-0.5 border-2 w-24"></div><div id="circle" class="border-2 w-24 rounded-full h-24"></div>
-                    </div>
-                </div> -->
             </div>
         </section>
         <section id="certificates" class="bg-blue-900 h-5/6 flex flex-col justify-around">
@@ -211,7 +200,7 @@
             </div>
         </section>
         <script src="./tscripts.ts"></script>
-        <script src="./contactScript.js"></script>
         <script src="./carrusel.js"></script>
+        <script src="./nav.js"></script>
     </body>
 </html>
