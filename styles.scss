@@ -135,6 +135,54 @@ header{
     }
 }
 
+#tech{
+    .tech-title{
+        margin-left: 1.25rem/* 20px */;
+        h2{
+            font-size: 4.5rem/* 72px */;
+            line-height: 1;
+        }
+    }
+    .tech-container{
+        justify-content: space-between;
+        .front_cont, .back_cont, .db_cont{
+            display: flex;
+            flex-direction: column;
+            row-gap: 1.25rem;
+            .tech-title{
+                h2{
+                    font-size: 3rem/* 48px */;
+                    line-height: 1;
+                }
+            }
+            .techs-div{
+                display: flex;
+                .each-tech{
+                    display: flex;
+                    align-items: center;
+                    #line{
+                        height: 0.125rem/* 2px */;
+                        border-width: 2px;
+                        width: 6rem/* 96px */;
+                    }
+                    #circle{
+                        border-width: 2px;
+                        width: 6rem/* 96px */;
+                        border-radius: 9999px;
+                        height: 6rem/* 96px */;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    img{
+                        height: 4rem/* 64px */;
+                    }
+                }
+            }
+            }
+        }
+    }
+}
+
 
 @media screen and (max-width: 550px){
     header {
@@ -297,7 +345,50 @@ header{
         }
     }
 
-    #tech, #certificates, #contact{
+    #tech{
+        .tech-title{
+            margin-left: 0rem/* 20px */;
+            h2{
+                font-size: 3.6rem/* 72px */;
+            }
+        }
+        .tech-container{
+            align-items: center;
+            justify-content: space-evenly;
+            .front_cont, .back_cont, .db_cont{
+                .tech-title{
+                    display: none;
+                }
+                .techs-div{
+                    display: grid;
+                    grid-template-columns: 75px 75px 75px 75px auto;
+                    grid-template-rows: 100px;
+                    grid-gap: 5px;
+            
+                    .each-tech{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        #line{
+                            display: none;
+                        }
+                        #circle{
+                            border-width: 2px;
+                            width: 4rem/* 96px */;
+                            border-radius: 9999px;
+                            height: 4rem/* 96px */;
+                            img{
+                                height: 2.6rem/* 64px */;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+
+    #certificates, #contact{
         display: none;
     }
 }

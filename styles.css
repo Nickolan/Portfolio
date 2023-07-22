@@ -90,6 +90,50 @@ header .nav .nav-list li {
 #proyects .proyect-block .proyects-container ul li .card .site-date {
   row-gap: 0.25rem;
 }
+#tech .tech-title {
+  margin-left: 1.25rem;
+}
+#tech .tech-title h2 {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+#tech .tech-container {
+  justify-content: space-between;
+}
+#tech .tech-container .front_cont, #tech .tech-container .back_cont, #tech .tech-container .db_cont {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.25rem;
+}
+#tech .tech-container .front_cont .tech-title h2, #tech .tech-container .back_cont .tech-title h2, #tech .tech-container .db_cont .tech-title h2 {
+  font-size: 3rem;
+  line-height: 1;
+}
+#tech .tech-container .front_cont .techs-div, #tech .tech-container .back_cont .techs-div, #tech .tech-container .db_cont .techs-div {
+  display: flex;
+}
+#tech .tech-container .front_cont .techs-div .each-tech, #tech .tech-container .back_cont .techs-div .each-tech, #tech .tech-container .db_cont .techs-div .each-tech {
+  display: flex;
+  align-items: center;
+}
+#tech .tech-container .front_cont .techs-div .each-tech #line, #tech .tech-container .back_cont .techs-div .each-tech #line, #tech .tech-container .db_cont .techs-div .each-tech #line {
+  height: 0.125rem;
+  border-width: 2px;
+  width: 6rem;
+}
+#tech .tech-container .front_cont .techs-div .each-tech #circle, #tech .tech-container .back_cont .techs-div .each-tech #circle, #tech .tech-container .db_cont .techs-div .each-tech #circle {
+  border-width: 2px;
+  width: 6rem;
+  border-radius: 9999px;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#tech .tech-container .front_cont .techs-div .each-tech #circle img, #tech .tech-container .back_cont .techs-div .each-tech #circle img, #tech .tech-container .db_cont .techs-div .each-tech #circle img {
+  height: 4rem;
+}
+
 @media screen and (max-width: 550px) {
   header {
     justify-content: center;
@@ -217,7 +261,43 @@ header .nav .nav-list li {
   #proyects .proyect-block .proyects-container ul li .card .site-date {
     display: none;
   }
-  #tech, #certificates, #contact {
+  #tech .tech-title {
+    margin-left: 0rem;
+  }
+  #tech .tech-title h2 {
+    font-size: 3.6rem;
+  }
+  #tech .tech-container {
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  #tech .tech-container .front_cont .tech-title, #tech .tech-container .back_cont .tech-title, #tech .tech-container .db_cont .tech-title {
+    display: none;
+  }
+  #tech .tech-container .front_cont .techs-div, #tech .tech-container .back_cont .techs-div, #tech .tech-container .db_cont .techs-div {
+    display: grid;
+    grid-template-columns: 75px 75px 75px 75px auto;
+    grid-template-rows: 100px;
+    grid-gap: 5px;
+  }
+  #tech .tech-container .front_cont .techs-div .each-tech, #tech .tech-container .back_cont .techs-div .each-tech, #tech .tech-container .db_cont .techs-div .each-tech {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #tech .tech-container .front_cont .techs-div .each-tech #line, #tech .tech-container .back_cont .techs-div .each-tech #line, #tech .tech-container .db_cont .techs-div .each-tech #line {
+    display: none;
+  }
+  #tech .tech-container .front_cont .techs-div .each-tech #circle, #tech .tech-container .back_cont .techs-div .each-tech #circle, #tech .tech-container .db_cont .techs-div .each-tech #circle {
+    border-width: 2px;
+    width: 4rem;
+    border-radius: 9999px;
+    height: 4rem;
+  }
+  #tech .tech-container .front_cont .techs-div .each-tech #circle img, #tech .tech-container .back_cont .techs-div .each-tech #circle img, #tech .tech-container .db_cont .techs-div .each-tech #circle img {
+    height: 2.6rem;
+  }
+  #certificates, #contact {
     display: none;
   }
 }/*# sourceMappingURL=styles.css.map */
