@@ -183,6 +183,42 @@ header{
     }
 }
 
+#certificates{
+      display: flex;  
+      flex-direction: column;
+      justify-content: space-around;
+      .sect-title{
+        h2{
+            font-size: 3.8rem/* 72px */;
+            line-height: 1;
+        }
+      }
+      .sect-certificates{
+        height: 83.333333%;
+        .carousel{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            .buttons{
+                button{
+                    font-size: 3rem/* 72px */;
+                    line-height: 1;
+                }
+            }
+            .div_certfs{
+                width: 40%;
+                a{
+                    img{
+                        height: 40%;
+                    }
+                }
+              }
+        }
+        
+      }
+}
+
 
 @media screen and (max-width: 550px){
     header {
@@ -388,7 +424,47 @@ header{
         }
     }
 
-    #certificates, #contact{
+    #certificates{
+        display: flex;  
+        flex-direction: column;
+        justify-content: space-around;
+        .sect-title{
+          h2{
+              font-size: 3.2rem/* 72px */;
+              line-height: 1;
+          }
+        }
+        .sect-certificates{
+            width: 100%;
+            .carousel{
+                flex-direction: column;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 100%;
+                .buttons{
+                    button{
+                        font-size: 3rem/* 72px */;
+                        line-height: 1;
+                    }
+                }
+                .div_certfs{
+                    width: 83%;
+                    height: 50%;
+                    a{
+                        width: 100%;
+                        img{
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            
+        }
+  }
+
+    #contact{
         display: none;
     }
 }
