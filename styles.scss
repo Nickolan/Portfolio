@@ -219,6 +219,32 @@ header{
       }
 }
 
+#contact{
+    .sect-title{
+        h2{
+            font-size: 4.5rem/* 72px */;
+            line-height: 1;
+        }
+    }
+    .contact-container{
+        #contact-me{
+            width: 66.666667%;
+            height: 25%;
+            flex-direction: row;
+            img{
+                height: 66.666667%;
+            }
+            div{
+                width: 50%;
+                h3{
+                    font-size: 1.8rem/* 24px */;
+                    line-height: 2rem/* 32px */;  
+                }
+            }
+        }
+    }
+}
+
 
 @media screen and (max-width: 550px){
     header {
@@ -465,6 +491,32 @@ header{
   }
 
     #contact{
-        display: none;
+        .sect-title{
+            h2{
+                font-size: 4rem/* 72px */;
+                line-height: 1;
+            }
+        }
+        .contact-container{
+            #contact-me{
+                width: 100%;
+                flex-direction: column;
+                img{
+                    height: 40%;
+                }
+                div{
+                    width: 80%;
+                    a{
+                        --tw-bg-opacity: 1;
+                        background-color: rgb(56 189 248 / var(--tw-bg-opacity));
+                        width: 6rem;
+                    }
+                    h3{
+                        font-size: 1.1rem/* 24px */;
+                        line-height: 2rem/* 32px */;  
+                    }
+                }
+            }
+        }
     }
 }

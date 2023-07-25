@@ -163,6 +163,26 @@ header .nav .nav-list li {
   height: 40%;
 }
 
+#contact .sect-title h2 {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+#contact .contact-container #contact-me {
+  width: 66.666667%;
+  height: 25%;
+  flex-direction: row;
+}
+#contact .contact-container #contact-me img {
+  height: 66.666667%;
+}
+#contact .contact-container #contact-me div {
+  width: 50%;
+}
+#contact .contact-container #contact-me div h3 {
+  font-size: 1.8rem;
+  line-height: 2rem;
+}
+
 @media screen and (max-width: 550px) {
   header {
     justify-content: center;
@@ -360,7 +380,27 @@ header .nav .nav-list li {
     height: 100%;
     width: 100%;
   }
-  #contact {
-    display: none;
+  #contact .sect-title h2 {
+    font-size: 4rem;
+    line-height: 1;
+  }
+  #contact .contact-container #contact-me {
+    width: 100%;
+    flex-direction: column;
+  }
+  #contact .contact-container #contact-me img {
+    height: 40%;
+  }
+  #contact .contact-container #contact-me div {
+    width: 80%;
+  }
+  #contact .contact-container #contact-me div a {
+    --tw-bg-opacity: 1;
+    background-color: rgb(56 189 248/var(--tw-bg-opacity));
+    width: 6rem;
+  }
+  #contact .contact-container #contact-me div h3 {
+    font-size: 1.1rem;
+    line-height: 2rem;
   }
 }/*# sourceMappingURL=styles.css.map */
