@@ -45,29 +45,8 @@ header .nav .nav-list li {
   font-size: 1.5rem;
   line-height: 2rem;
 }
-
-#about .about_container {
-  justify-content: space-around;
-}
-#about .about_container .sect-title {
-  font-size: 4.5rem;
-  line-height: 1;
-}
-#about .about_container .div_myInfo {
-  width: 83.333333%;
-  justify-content: space-around;
-}
-#about .about_container .div_myInfo .name_about h2 {
-  font-size: 3rem;
-  line-height: 1;
-}
-#about .about_container .div_myInfo .name_about span {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-#about .about_container .div_myInfo .text_about p {
-  font-size: 1.5rem;
-  line-height: 2rem;
+#home .image img {
+  border-radius: 9999px;
 }
 
 #proyects .proyect-block .sect-title h2 {
@@ -90,6 +69,7 @@ header .nav .nav-list li {
 #proyects .proyect-block .proyects-container ul li .card .site-date {
   row-gap: 0.25rem;
 }
+
 #tech .tech-title {
   margin-left: 1.25rem;
 }
@@ -168,9 +148,12 @@ header .nav .nav-list li {
   line-height: 1;
 }
 #contact .contact-container #contact-me {
-  width: 66.666667%;
-  height: 25%;
+  margin-top: 10px;
+  width: 60%;
+  height: 22%;
   flex-direction: row;
+  border: #000 solid 1px;
+  border-radius: 9999px;
 }
 #contact .contact-container #contact-me img {
   height: 66.666667%;
@@ -245,20 +228,20 @@ header .nav .nav-list li {
   }
   #home .home_title .home_text {
     justify-content: end;
-    gap: 2.3rem;
+    gap: 2rem;
     width: 80%;
   }
   #home .home_title .home_text h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 1;
   }
   #home .home_title .home_text h1 {
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
   #home .home_title .home_text b {
     margin: 0;
     width: 85vw;
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
   #home .home_title .image {
     display: flex;
@@ -267,27 +250,6 @@ header .nav .nav-list li {
   }
   #home .home_title .image img {
     width: 30%;
-  }
-  #about .about_container {
-    justify-content: center;
-  }
-  #about .about_container .sect-title {
-    font-size: 3rem;
-  }
-  #about .about_container .div_myInfo {
-    width: 100%;
-    justify-content: space-around;
-  }
-  #about .about_container .div_myInfo .name_about h2 {
-    font-size: 2rem;
-  }
-  #about .about_container .div_myInfo .name_about span {
-    font-size: 1.5rem;
-  }
-  #about .about_container .div_myInfo .text_about p {
-    font-size: 1rem;
-    line-height: 1.7rem;
-    width: 120%;
   }
   #proyects .proyect-block .sect-title h2 {
     font-size: 3.5rem;
