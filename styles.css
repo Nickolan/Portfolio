@@ -47,6 +47,7 @@ header .nav .nav-list li {
 }
 #home .image img {
   border-radius: 9999px;
+  box-shadow: 2px 3px 3px blue, 0 0 5em blue, 0 0 5em blue;
 }
 
 #proyects .proyect-block .sect-title h2 {
@@ -140,7 +141,8 @@ header .nav .nav-list li {
   width: 40%;
 }
 #certificates .sect-certificates .carousel .div_certfs a img {
-  height: 40%;
+  height: 30%;
+  max-height: 600px;
 }
 
 #contact .sect-title h2 {
@@ -155,15 +157,17 @@ header .nav .nav-list li {
   border: #000 solid 1px;
   border-radius: 9999px;
 }
-#contact .contact-container #contact-me img {
-  height: 66.666667%;
-}
 #contact .contact-container #contact-me div {
-  width: 50%;
+  width: 100%;
 }
-#contact .contact-container #contact-me div h3 {
-  font-size: 1.8rem;
-  line-height: 2rem;
+#contact .contact-container #contact-me div a {
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, 0.716);
+  width: 6rem;
+}
+#contact .contact-container #contact-me div a img {
+  height: 66.666667%;
 }
 
 @media screen and (max-width: 550px) {
@@ -224,24 +228,24 @@ header .nav .nav-list li {
   #home .home_title {
     flex-direction: column;
     justify-content: start;
-    gap: 3rem;
+    gap: 2.5rem;
   }
   #home .home_title .home_text {
     justify-content: end;
-    gap: 2rem;
+    gap: 1.5rem;
     width: 80%;
   }
   #home .home_title .home_text h2 {
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     line-height: 1;
   }
   #home .home_title .home_text h1 {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
   #home .home_title .home_text b {
     margin: 0;
     width: 85vw;
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   #home .home_title .image {
     display: flex;
@@ -249,7 +253,7 @@ header .nav .nav-list li {
     margin-bottom: 1rem;
   }
   #home .home_title .image img {
-    width: 30%;
+    width: 45%;
   }
   #proyects .proyect-block .sect-title h2 {
     font-size: 3.5rem;
@@ -281,6 +285,7 @@ header .nav .nav-list li {
   #tech .tech-container {
     align-items: center;
     justify-content: space-evenly;
+    padding-right: 10px;
   }
   #tech .tech-container .front_cont .tech-title, #tech .tech-container .back_cont .tech-title, #tech .tech-container .db_cont .tech-title {
     display: none;
@@ -288,8 +293,8 @@ header .nav .nav-list li {
   #tech .tech-container .front_cont .techs-div, #tech .tech-container .back_cont .techs-div, #tech .tech-container .db_cont .techs-div {
     display: grid;
     grid-template-columns: 75px 75px 75px 75px auto;
-    grid-template-rows: 100px;
-    grid-gap: 5px;
+    grid-template-rows: 70px 70px;
+    grid-gap: 3px;
   }
   #tech .tech-container .front_cont .techs-div .each-tech, #tech .tech-container .back_cont .techs-div .each-tech, #tech .tech-container .db_cont .techs-div .each-tech {
     display: flex;
@@ -350,19 +355,16 @@ header .nav .nav-list li {
     width: 100%;
     flex-direction: column;
   }
-  #contact .contact-container #contact-me img {
-    height: 40%;
-  }
   #contact .contact-container #contact-me div {
-    width: 80%;
+    width: 100%;
   }
   #contact .contact-container #contact-me div a {
+    border-radius: 9999px;
     --tw-bg-opacity: 1;
-    background-color: rgb(56 189 248/var(--tw-bg-opacity));
-    width: 6rem;
+    background-color: rgba(255, 255, 255, 0.716);
+    width: 4rem;
   }
-  #contact .contact-container #contact-me div h3 {
-    font-size: 1.1rem;
-    line-height: 2rem;
+  #contact .contact-container #contact-me div a img {
+    height: 40%;
   }
 }/*# sourceMappingURL=styles.css.map */
